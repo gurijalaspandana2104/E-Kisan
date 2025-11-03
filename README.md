@@ -60,7 +60,9 @@ It focuses on simplicity, usability, and real-time information for better decisi
 ---
 
 
-<img width="1920" height="1080" alt="Screenshot (192)" src="https://github.com/user-attachments/assets/e11892a4-7538-43c2-8665-1c81b32f9ff6" />
+
+<img width="1920" height="1080" alt="Screenshot (197)" src="https://github.com/user-attachments/assets/cccfa6c1-243e-4dd8-84fc-24cb7a786c35" />
+
 
 <img width="1920" height="1080" alt="Screenshot (196)" src="https://github.com/user-attachments/assets/5aabccc7-e597-4eb6-9bff-aa2c78700354" />
 
