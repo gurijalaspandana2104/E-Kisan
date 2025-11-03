@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <title>FarmerHub</title>
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="drive-download-20250324T121922Z-001/kissan.png" alt="FarmerHub Logo" />
+        <span>eKisan</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#sell">Sell</a></li>
+        <li><a href="#buy">Buy</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#weather">Weather</a></li>
+        <li><a href="#language-selection">Language</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero section-full">
+    <div class="hero-content">
+      <h1>Welcome to FarmerHub</h1>
+      <p>Empowering farmers through technology</p>
+    </div>
+  </section>
+
+  <!-- Sell Section -->
+  <section id="sell" class="sell-section section-full">
+    <h2>Sell Your Farm Products</h2>
+    <p>Connect directly with buyers and get the best prices for your produce.</p>
+    <a href="#" class="btn">Start Selling</a>
+  </section>
+
+  <!-- Buy Section -->
+  <section id="buy" class="buy-section section-full">
+    <h2>Buy Farming Essentials</h2>
+    <div class="buy-cards">
+      <div class="card">
+        <img src="drive-download-20250324T121922Z-001/seeds.jpg" alt="Seeds">
+        <h3>Seeds</h3>
+        <p>Quality seeds for better yield.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250324T121922Z-001/fertilizers.webp" alt="Fertilizers">
+        <h3>Fertilizers</h3>
+        <p>Improve soil fertility with organic and chemical fertilizers.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250324T121922Z-001/pesticides.jpg" alt="Pesticides">
+        <h3>Pesticides</h3>
+        <p>Protect your crops from harmful pests.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250324T121922Z-001/tools.png" alt="Tools">
+        <h3>Tools</h3>
+        <p>Modern agricultural tools for efficiency.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learn Section -->
+  <section id="learn" class="learn-section section-full">
+    <h2>Learn with Us</h2>
+    <p>Explore topics to enhance your farming knowledge</p>
+    <div class="learn-cards">
+      <div class="card">
+        <img src="drive-download-20250324T121922Z-001/pexels-jatuphon-buraphon-110709-348689.jpg" alt="Organic Farming">
+        <h3>Organic Farming</h3>
+        <p>Learn how to grow crops without synthetic fertilizers and pesticides.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250324T121922Z-001/pexels-alameenng-19879055.jpg" alt="Soil Management">
+        <h3>Soil Management</h3>
+        <p>Understand soil nutrients, erosion control, and soil health practices.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250324T121922Z-001/pexels-pixabay-531208.jpg" alt="Pest Management">
+        <h3>Pest Management</h3>
+        <p>Discover sustainable methods to manage pests and diseases.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="drive-download-20250324T121922Z-001/pexels-dinukagunawardana-17903072.jpg" alt="Water Conservation">
+        <h3>Water Conservation</h3>
+        <p>Implement efficient irrigation systems and conserve water resources.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Language Selection Section -->
+  <section id="language-selection" class="language-section section-full">
+    <h2>Select Your Language</h2>
+    <select id="language-dropdown" onchange="changeLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="ta">Tamil</option>
+      <option value="te">Telugu</option>
+      <option value="kn">Kannada</option>
+      <option value="ml">Malayalam</option>
+    </select>
+  </section>
+
+  <!-- Weather Section -->
+  <section id="weather" class="weather-section section-full">
+    <h2>Weather Update</h2>
+    <p>Get real-time weather data for your location</p>
+    <!-- <select id="language">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="ta">Tamil</option>
+      <option value="te">Telugu</option>
+      <option value="kn">Kannada</option>
+      <option value="ml">Malayalam</option>
+    </select> -->
+    <div class="weather-card fancy-weather">
+      <h3>Location: <span id="location">Fetching...</span></h3>
+      <p>🌡 Temperature: <span id="temp">--</span>°C</p>
+      <p>🌥 Condition: <span id="condition">--</span></p>
+      <p>💧 Humidity: <span id="humidity">--</span>%</p>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="form-section section-full">
+    <h2>Login to Your Account</h2>
+    <form class="fancy-form">
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email" required />
+      <label>Password:</label>
+      <input type="password" placeholder="Enter your password" required />
+      <button type="submit">Login</button>
+      <p>Don't have an account? <span class="signup-link">Create New Account</span></p>
+    </form>
+  </section>
+
+  <!-- Chatbot Section -->
+  <button id="chatbot-btn">Chat with Us 💬</button>
+  <div id="chatbot" class="chatbot-container hidden">
+    <div class="chat-header">Chatbot</div>
+    <div class="chat-content" id="chat-content">
+      <p>Hi! How can I assist you today?</p>
+    </div>
+    <input type="text" id="chat-input" placeholder="Type your message..." />
+    <button id="send-btn">Send</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
